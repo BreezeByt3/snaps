@@ -12,7 +12,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -22,6 +22,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -137,9 +145,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -172,7 +182,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -182,6 +192,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -297,9 +315,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -332,7 +352,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -342,6 +362,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -457,9 +485,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -492,7 +522,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -502,6 +532,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -613,9 +651,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -643,7 +683,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -653,6 +693,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -776,9 +824,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -811,7 +861,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -821,6 +871,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -936,9 +994,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -971,7 +1031,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -981,6 +1041,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -1096,9 +1164,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -1131,7 +1201,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -1141,6 +1211,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -1264,9 +1342,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": "/foo/bar/index.js",
@@ -1299,7 +1379,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -1309,6 +1389,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -1432,9 +1520,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": "/foo/bar/index.js",
@@ -1467,7 +1557,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -1477,6 +1567,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -1577,9 +1675,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -1612,7 +1712,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -1622,6 +1722,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -1746,9 +1854,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -1781,7 +1891,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -1791,6 +1901,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -1906,9 +2024,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -1941,7 +2061,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -1951,6 +2071,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -2066,9 +2194,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -2101,7 +2231,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -2111,6 +2241,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -2235,9 +2373,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -2270,7 +2410,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/node_modules/swc-loader/index.js",
           "options": {
@@ -2280,6 +2420,14 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
             "jsc": {
               "parser": {
                 "syntax": "typescript",
+                "tsx": true,
+              },
+              "transform": {
+                "react": {
+                  "importSource": "@metamask/snaps-sdk",
+                  "runtime": "automatic",
+                  "useBuiltins": true,
+                },
               },
             },
             "module": {
@@ -2404,9 +2552,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -2439,7 +2589,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/src/webpack/loaders/function.ts",
           "options": {
@@ -2563,9 +2713,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -2593,7 +2745,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/src/webpack/loaders/function.ts",
           "options": {
@@ -2717,9 +2869,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
@@ -2747,7 +2901,7 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
     "rules": [
       {
         "exclude": /node_modules/u,
-        "test": /\\\\\\.\\(js\\|mjs\\|cjs\\|ts\\)\\$/u,
+        "test": /\\\\\\.\\(js\\|jsx\\|mjs\\|cjs\\|ts\\|tsx\\)\\$/u,
         "use": {
           "loader": "/foo/bar/src/webpack/loaders/function.ts",
           "options": {
@@ -2871,9 +3025,11 @@ exports[`getDefaultConfiguration returns the default Webpack configuration for t
   "resolve": {
     "extensions": [
       ".js",
+      ".jsx",
       ".mjs",
       ".cjs",
       ".ts",
+      ".tsx",
     ],
     "fallback": {
       "buffer": false,
